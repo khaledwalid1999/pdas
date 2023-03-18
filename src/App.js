@@ -1,15 +1,19 @@
 import ProfileCard from "./ProfileCard";
-import Alexa from "./images/alexa.jpg";
-import Cortana from "./images/cortana.jpg";
-import Siri from "./images/siri.jpg";
+import ProfileCardList from "./ProfileCardList";
+import Alexa from "./Images/alexa.png";
+import Cortana from "./Images/cortana.png";
+import Siri from "./Images/siri.png";
+import "./styles.css";
 
 function App() {
   return (
     <div>
       <div>Personal Digital Assistants</div>
-      <ProfileCard img={Alexa} handle="@alexa99" title="alexa" />
-      <ProfileCard img={Cortana} handle="@Cortana" title="Cortana" />
-      <ProfileCard img={Siri} title="SirI" handle="@Siri" />
+      <div className="ProfileCardList">
+        <ProfileCard image={Alexa} handle="Alexa" title="Amazon" />
+        <ProfileCard image={Cortana} handle="Cortana" title="Microsoft" />
+        <ProfileCard image={Siri} handle="Siri" title="Apple" />
+      </div>
     </div>
   );
 }
