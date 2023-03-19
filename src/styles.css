@@ -1,0 +1,20 @@
+.ProfileCard{
+    text-align: center;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ProfileImg{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 5px;
+}
+
+.ProfileCardList{
+    display: flex;
+    justify-content: space-evenly;
+}
