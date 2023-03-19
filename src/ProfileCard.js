@@ -1,10 +1,10 @@
 import "./styles.css";
-function ProfileCard({ image, handle, title, extendClass }) {
+function ProfileCard({ image, handle, title }) {
   return (
     <div className="card">
       <div className="card-image">
         <figure className="image is-1by1">
-          <img src={image} alt="pda logo" className="ProfileImg" />
+          <img src={image} alt="pda logo" />
         </figure>
       </div>
 

@@ -12,46 +12,29 @@ function App() {
       <div>Personal Digital Assistants</div>
       <ProfileCardList
         profiles={[
-          {
-            image: Alexa,
-            handle: "zzz",
-            title: "aaaa",
-            extendClass: "card ProfileCard",
-          },
-          {
-            image: Cortana,
-            handle: "zzz",
-            title: "aaaa",
-            extendClass: "card ProfileCard",
-          },
-          {
-            image: Siri,
-            handle: "zzz",
-            title: "aaaa",
-            extendClass: "card ProfileCard",
-          },
+          { image: Alexa, handle: "@Alexa99", title: "Amazon" },
+          { image: Cortana, handle: "@Cortana", title: "Microsoft" },
+          { image: Siri, handle: "@Siri32", title: "Apple" },
         ]}
       />
-
-      <div className="ProfileCardList">
-        <ProfileCard
-          image={Alexa}
-          handle="Alexa"
-          title="Amazon"
-          extendClass="card ProfileCard"
-        />
-        <ProfileCard
-          image={Cortana}
-          handle="Cortana"
-          title="Microsoft"
-          extendClass="card ProfileCard"
-        />
-        <ProfileCard
-          image={Siri}
-          handle="Siri"
-          title="Apple"
-          extendClass="card ProfileCard"
-        />
+      <div className="container">
+        <section className="section">
+          <div className="columns">
+            <div className="column is-4">
+              <ProfileCard image={Alexa} handle="@Alexa99" title="Amazon" />
+            </div>
+            <div className="column is-4">
+              <ProfileCard
+                image={Cortana}
+                handle="@Cortana"
+                title="Microsoft"
+              />
+            </div>
+            <div className="column is-4">
+              <ProfileCard image={Siri} handle="@Siri32" title="Apple" />
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
