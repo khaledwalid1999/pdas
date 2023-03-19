@@ -9,6 +9,7 @@ function ProfileCardList({ profiles }) {
           image={profile.image}
           handle={profile.handle}
           title={profile.title}
+          extendClass={profile.extendClass}
         />
       ))}
     </div>
