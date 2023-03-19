@@ -1,5 +1,4 @@
 import ProfileCard from "./ProfileCard";
-import ProfileCardList from "./ProfileCardList";
 import Alexa from "./Images/alexa.png";
 import Cortana from "./Images/cortana.png";
 import Siri from "./Images/siri.png";
