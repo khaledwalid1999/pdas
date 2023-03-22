@@ -1,5 +1,5 @@
 import "./styles.css";
-function ProfileCard({ image, handle, title }) {
+function ProfileCard({ image, handle, title, description }) {
   return (
     <div className="card">
       <div className="card-image">
@@ -13,6 +13,7 @@ function ProfileCard({ image, handle, title }) {
           <p className="title is-4">{title}</p>
           <p className="subtitle is-6">{handle}</p>
         </div>
+        <div className="content">{description}</div>
       </div>
     </div>
   );

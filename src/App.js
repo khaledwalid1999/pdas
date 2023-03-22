@@ -9,29 +9,38 @@ import "./styles.css";
 function App() {
   return (
     <div>
-      <div>Personal Digital Assistants</div>
-      <ProfileCardList
-        profiles={[
-          { image: Alexa, handle: "@Alexa99", title: "Amazon" },
-          { image: Cortana, handle: "@Cortana", title: "Microsoft" },
-          { image: Siri, handle: "@Siri32", title: "Apple" },
-        ]}
-      />
+      <section className="hero is-primary">
+        <div className="hero-body">
+          <p className="title">Personal Digital Assistants</p>
+        </div>
+      </section>
+
       <div className="container">
         <section className="section">
           <div className="columns">
             <div className="column is-4">
-              <ProfileCard image={Alexa} handle="@Alexa99" title="Amazon" />
+              <ProfileCard
+                image={Alexa}
+                handle="@Alexa99"
+                title="Amazon"
+                description="Alexa was created by amazon and helps you with things"
+              />
             </div>
             <div className="column is-4">
               <ProfileCard
                 image={Cortana}
                 handle="@Cortana"
                 title="Microsoft"
+                description="Cortana was created by Microsoft and helps you with things"
               />
             </div>
             <div className="column is-4">
-              <ProfileCard image={Siri} handle="@Siri32" title="Apple" />
+              <ProfileCard
+                image={Siri}
+                handle="@Siri32"
+                title="Apple"
+                description="Siri was created by Apple and helps you with things"
+              />
             </div>
           </div>
         </section>
